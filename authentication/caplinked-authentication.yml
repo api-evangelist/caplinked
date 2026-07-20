@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.caplinked.com/getting-started
+docs: https://developer.caplinked.com/getting-started
+summary:
+  types:
+  - apiKey
+  scheme: hmac-request-signing
+  algorithm: HMAC-SHA256
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: HmacRequestSigning
+  type: apiKey
+  in: header
+  scheme: HMAC-SHA256
+  description: >-
+    CapLinked API requests are signed with the account's private key using the
+    HMAC-SHA256 algorithm. The signed payload combines the public API key, the
+    user token, and a request expiration timestamp. Requests are transmitted over
+    TLS.
+  headers:
+  - name: x-api-key
+    description: Public API key that identifies the account.
+  - name: x-api-user-token
+    description: User token identifying the user resource making the request.
+  - name: x-api-signature
+    description: 'Signature in the form: Method=HMAC-SHA256 Signature=[hash].'
+  - name: x-api-exp-date
+    description: Unix UTC timestamp after which the signed request expires (example TTL 1800s / 30 min).
+notes:
+- Private keys must never be committed to source control and can be reset/rolled at any time.
+- Organization-level public and private keys are supported for signing API requests (added 2017-02-17).
