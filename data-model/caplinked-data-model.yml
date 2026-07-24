@@ -1,0 +1,89 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.caplinked.com/glossary
+entities:
+- name: Organization
+  description: Highest-level container; may contain unlimited teams. Members manage members and read org info.
+- name: Team
+  description: Child of Organization, parent of Workspaces. Has a team owner and members who can create workspaces.
+- name: Workspace
+  description: Child of Team; contains Folders, Files, Activity, and Groups. Users access contents via group membership.
+- name: Group
+  description: Child of Workspace; organizes users and controls access levels; configures watermarking and DRM.
+- name: User
+  description: Can hold unlimited memberships across organizations, teams, and groups.
+- name: Permission
+  description: Junction between Groups and Folders defining access types (View, Download, Upload).
+- name: Folder
+  description: Stores files and other folders; has an index number and name.
+- name: File
+  description: Accepts any file type except hidden/executable; PDF and MS Office files get viewable versions.
+- name: Upload
+  description: Mechanism for adding files/folders (up to 5 GB); creates file/folder objects on processing.
+- name: Download
+  description: Retrieves files/folders as a zip; applies group-based security features.
+- name: Activity
+  description: Automatic record of workspace-level actions (adds, modifications, deletions, membership changes).
+- name: Watermark
+  description: Custom dynamic watermark settings applied per team/group (time, date, user email, IP).
+relationships:
+- from: Organization
+  to: Team
+  type: has_many
+  via: team
+- from: Team
+  to: Organization
+  type: belongs_to
+  via: organization
+- from: Team
+  to: Workspace
+  type: has_many
+  via: workspace
+- from: Workspace
+  to: Team
+  type: belongs_to
+  via: team
+- from: Workspace
+  to: Folder
+  type: has_many
+  via: folder
+- from: Workspace
+  to: File
+  type: has_many
+  via: file
+- from: Workspace
+  to: Group
+  type: has_many
+  via: group
+- from: Workspace
+  to: Activity
+  type: has_many
+  via: activity
+- from: Folder
+  to: File
+  type: has_many
+  via: file
+- from: Folder
+  to: Folder
+  type: has_many
+  via: folder
+- from: Group
+  to: User
+  type: has_many
+  via: membership
+- from: Group
+  to: Permission
+  type: has_many
+  via: permission
+- from: Permission
+  to: Folder
+  type: belongs_to
+  via: folder
+- from: Permission
+  to: Group
+  type: belongs_to
+  via: group
+- from: User
+  to: Group
+  type: has_many
+  via: membership

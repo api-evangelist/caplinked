@@ -1,0 +1,40 @@
+# CapLinked
+
+> CapLinked is a secure virtual data room (VDR) provider for M&A, fundraising, due diligence, audits, and confidential document workflows. The CapLinked API is a RESTful JSON API secured by HMAC-SHA256 request signing that lets developers embed CapLinked's information-security controls — secure storage, ACL privileges, DRM, dynamic watermarking, activity/audit reporting, and OCR search — into their own applications.
+
+## APIs
+
+- [CapLinked API Documentation](https://developer.caplinked.com/docs): RESTful JSON API for virtual data rooms (organizations, teams, workspaces, folders, files, groups, permissions, uploads, downloads, watermarks, activities).
+- [Getting Started](https://developer.caplinked.com/getting-started): Base URL, HMAC-SHA256 request signing, and required headers.
+- [Glossary](https://developer.caplinked.com/glossary): Object model and definitions.
+- [API Changelog](https://developer.caplinked.com/api-changelog): Dated API changes.
+
+## Authentication
+
+- HMAC-SHA256 request signing over TLS. Headers: x-api-key, x-api-user-token, x-api-signature, x-api-exp-date.
+- Base URL (sandbox): https://sandbox.caplinked.com/api/v1/
+
+## SDKs
+
+- [Node.js SDK](https://www.npmjs.com/package/caplinked-api-node)
+- [Ruby SDK](https://github.com/caplinked/caplinked-api-ruby)
+- [PHP SDK](https://packagist.org/packages/caplinked/caplinked-api-php)
+- [C#/.NET SDK](https://www.nuget.org/packages/CapLinked)
+- [Python SDK](https://github.com/caplinked/caplinked-api-python)
+
+## Specs & Artifacts
+
+- [Authentication](https://raw.githubusercontent.com/api-evangelist/caplinked/refs/heads/main/authentication/caplinked-authentication.yml)
+- [Conventions](https://raw.githubusercontent.com/api-evangelist/caplinked/refs/heads/main/conventions/caplinked-conventions.yml)
+- [Data Model](https://raw.githubusercontent.com/api-evangelist/caplinked/refs/heads/main/data-model/caplinked-data-model.yml)
+- [Changelog](https://raw.githubusercontent.com/api-evangelist/caplinked/refs/heads/main/changelog/caplinked-changelog.yml)
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/caplinked/refs/heads/main/conformance/caplinked-conformance.yml)
+
+## Docs
+
+- [Developer Portal](https://developer.caplinked.com/)
+- [Sign Up](https://developer.caplinked.com/signup)
+- [Security & Compliance](https://www.caplinked.com/security/): SOC 2, ISO 27001, HIPAA/HITECH, PCI SAQ-D, FISMA, EU-U.S. Privacy Shield.
+- [Status Page](https://status.caplinked.com/)
+- [Pricing](https://www.caplinked.com/pricing/)
+- [Blog](https://www.caplinked.com/blog/)

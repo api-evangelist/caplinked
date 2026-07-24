@@ -1,7 +1,17 @@
 aid: caplinked
 name: Caplinked
-description: Caplinked is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  CapLinked is a secure virtual data room (VDR) provider used for M&A, fundraising,
+  due diligence, audits, and other confidential document workflows. The CapLinked
+  API is a RESTful, JSON API secured by HMAC-SHA256 request signing (TLS + signed
+  requests) that lets developers embed CapLinked's information-security controls into
+  their own applications: protect and encrypt files in secure cloud storage, configure
+  Access Control List (ACL) privileges, apply enterprise Digital Rights Management (DRM)
+  to Microsoft Office and PDF files, generate dynamic watermarks, produce exhaustive
+  activity and audit-trail reports, and run OCR-backed search over stored files. The API
+  models an Organization > Team > Workspace hierarchy containing Folders, Files, Groups,
+  Permissions, Activities, Uploads, Downloads, and Watermarks, and ships official SDKs for
+  Node.js, Ruby, PHP, C#/.NET, and Python. It supports search, pagination, and filtering.
 url: https://raw.githubusercontent.com/api-evangelist/caplinked/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +19,119 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.caplinked.com/wp-content/uploads/2022/03/Caplinked-Logo-299x80-e1541700266853.png
 tags:
 - Company
-apis: []
+- Virtual Data Room
+- Document Security
+- File Sharing
+- Due Diligence
+- Mergers and Acquisitions
+- Digital Rights Management
+- Compliance
+- Data Room
+- Security
+apis:
+- name: CapLinked API
+  description: >-
+    RESTful JSON API for CapLinked virtual data rooms, secured by HMAC-SHA256 request
+    signing. Manage organizations, teams, workspaces, folders, files, groups, permissions,
+    uploads, downloads, watermarks, and activity/audit reporting.
+  humanURL: https://developer.caplinked.com/docs
+  baseURL: https://sandbox.caplinked.com/api/v1/
+  tags:
+  - Virtual Data Room
+  - Document Security
+  - File Sharing
+  properties:
+  - type: Documentation
+    url: https://developer.caplinked.com/docs
+  - type: GettingStarted
+    url: https://developer.caplinked.com/getting-started
+  - type: Glossary
+    url: https://developer.caplinked.com/glossary
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/caplinked-trust-center.yml
+- type: DomainSecurity
+  url: security/caplinked-domain-security.yml
 - type: Website
   url: https://caplinked.com
+- type: DeveloperPortal
+  url: https://developer.caplinked.com/
+- type: Documentation
+  url: https://developer.caplinked.com/docs
+- type: GettingStarted
+  url: https://developer.caplinked.com/getting-started
+- type: SignUp
+  url: https://developer.caplinked.com/signup
+- type: Login
+  url: https://developer.caplinked.com/login
+- type: GitHubOrganization
+  url: https://github.com/caplinked
+- type: Blog
+  url: https://www.caplinked.com/blog/
+- type: BlogRSS
+  url: https://www.caplinked.com/feed/
+- type: Pricing
+  url: https://www.caplinked.com/pricing/
+- type: Support
+  url: https://www.caplinked.com/contact/
+- type: TermsOfService
+  url: https://www.caplinked.com/company/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.caplinked.com/company/privacy-policy/
+- type: StatusPage
+  url: https://status.caplinked.com/
+- type: Compliance
+  url: https://www.caplinked.com/security/
+- type: ChangeLog
+  url: https://developer.caplinked.com/api-changelog
+- type: ChangeLog
+  name: CapLinked API changelog (structured)
+  url: changelog/caplinked-changelog.yml
+- type: Packages
+  url: packages/caplinked-packages.yml
+- type: SDKs
+  url: packages/caplinked-packages.yml
+- type: Authentication
+  url: authentication/caplinked-authentication.yml
+- type: Conventions
+  url: conventions/caplinked-conventions.yml
+- type: DataModel
+  url: data-model/caplinked-data-model.yml
+- type: Sandbox
+  url: sandbox/caplinked-sandbox.yml
+- type: Lifecycle
+  url: lifecycle/caplinked-lifecycle.yml
+- type: Conformance
+  url: conformance/caplinked-conformance.yml
+- type: MCPServer
+  url: mcp/caplinked-mcp.yml
+- type: LLMsTxt
+  url: llms/caplinked-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

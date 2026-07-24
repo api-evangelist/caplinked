@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.caplinked.com/api-changelog
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://developer.caplinked.com/getting-started
+changelog:
+  url: https://developer.caplinked.com/api-changelog
+  artifact: changelog/caplinked-changelog.yml
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No formal deprecation/Sunset-header policy is published. The API changelog does
+    record removed request parameters and renamed fields (e.g. 'jti' renamed to
+    'user_token'), so breaking changes are announced via the changelog.
+sla:
+  uptime_target: "99.9%"
+  source: https://www.caplinked.com/security/
+  note: 99.9% uptime guarantee (Enterprise plan advertises a 99.9% uptime SLA).
+status_page: https://status.caplinked.com/
+deprecated_operations: []

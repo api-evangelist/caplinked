@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/caplinked
+packages:
+- language: javascript
+  registry: npm
+  name: caplinked-api-node
+  url: https://www.npmjs.com/package/caplinked-api-node
+  repository: https://github.com/caplinked/caplinked-api-node
+  install: npm install caplinked-api-node
+  official: true
+- language: ruby
+  registry: github
+  name: caplinked-api-ruby
+  url: https://github.com/caplinked/caplinked-api-ruby
+  repository: https://github.com/caplinked/caplinked-api-ruby
+  official: true
+- language: php
+  registry: packagist
+  name: caplinked/caplinked-api-php
+  url: https://packagist.org/packages/caplinked/caplinked-api-php
+  repository: https://github.com/caplinked/caplinked-api-php
+  install: composer require caplinked/caplinked-api-php
+  official: true
+- language: csharp
+  registry: nuget
+  name: CapLinked
+  url: https://www.nuget.org/packages/CapLinked
+  repository: https://github.com/caplinked/caplinked-api-csharp
+  install: dotnet add package CapLinked
+  official: true
+- language: python
+  registry: github
+  name: caplinked-api-python
+  url: https://github.com/caplinked/caplinked-api-python
+  repository: https://github.com/caplinked/caplinked-api-python
+  official: true

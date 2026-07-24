@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.caplinked.com/security/
+standards:
+- id: rest
+  conforms: true
+  evidence: API is based on RESTful principles with JSON messages, search, pagination, filtering.
+- id: hmac-request-signing
+  conforms: true
+  evidence: Requests signed with HMAC-SHA256 (public/private key + user token + expiration).
+- id: tls
+  conforms: true
+  evidence: All requests over TLS/HTTPS; SSL/TLS with up-to-date cipher suites.
+- id: oauth2
+  conforms: false
+  evidence: Auth is HMAC request signing, not OAuth2.
+- id: soc2
+  conforms: true
+  evidence: AICPA SOC 2 certified (independent assessment).
+- id: iso-27001
+  conforms: true
+  evidence: Data hosted on ISO 27001-compliant servers.
+- id: hipaa
+  conforms: true
+  evidence: Meets HIPAA and HITECH requirements.
+- id: pci-saq-d
+  conforms: true
+  evidence: PCI SAQ-D compliance for payment card data.
+- id: fisma
+  conforms: true
+  evidence: FISMA compliance via NIST SP 800-53.
+- id: gdpr-privacy-shield
+  conforms: true
+  evidence: EU-U.S. Privacy Shield for cross-border data transfer.

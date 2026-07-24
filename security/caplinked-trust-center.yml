@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://caplinked.com/security/
+url: https://caplinked.com/security/
+certifications:
+- SOC 2
+- ISO 27001
+- HIPAA
+- HITECH
+- PCI SAQ-D
+- FISMA
+- EU-U.S. Privacy Shield
+security_features:
+- AES-256 encryption at rest
+- SSL/TLS in transit
+- FileProtect Digital Rights Management (DRM)
+- dynamic watermarking
+- real-time virus scanning
+- daily automated backups
+- 99.9% uptime guarantee
+evidence:
+- source: https://caplinked.com/security/
+  keywords:
+  - soc 2
+  - iso 27001
+  - hipaa
+  - pci saq-d
+  - fisma
+  - privacy shield

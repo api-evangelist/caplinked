@@ -1,0 +1,60 @@
+generated: '2026-07-18'
+method: derived
+status: candidate
+source: >-
+  Derived from CapLinked documented endpoints (developer.caplinked.com/api-changelog,
+  /glossary) and the official Node SDK resource surface. No official hosted MCP server
+  was found; this is a candidate tool list for a future MCP wrapper.
+server:
+  name: caplinked
+  transport: http
+  url: null
+auth:
+  scheme: HMAC-SHA256 request signing
+  headers: [x-api-key, x-api-user-token, x-api-signature, x-api-exp-date]
+tools:
+- name: list_teams
+  description: List teams in the organization.
+  source_operation: GET /api/v1/teams
+- name: list_workspace_memberships
+  description: Get the list of members in a workspace.
+  source_operation: GET /workspaces/{id}/memberships
+- name: get_file_info
+  description: Retrieve information about a file in a workspace.
+  source_operation: files.getFileInfo
+- name: send_user_reminder
+  description: Send an invite reminder to a user.
+  source_operation: POST /users/{id}/remind
+- name: get_watermark
+  description: Retrieve custom watermark settings.
+  source_operation: GET /watermark/{id}
+- name: set_watermark
+  description: Create or update custom watermark settings.
+  source_operation: POST /watermark/{id}
+- name: delete_user
+  description: Delete a user via organization admin token.
+  source_operation: DELETE /users/{id}
+- name: list_organizations
+  description: List organizations and memberships.
+  source_operation: organizations resource
+- name: list_folders
+  description: List folders within a workspace.
+  source_operation: folders resource
+- name: list_files
+  description: List files within a folder/workspace.
+  source_operation: files resource
+- name: list_groups
+  description: List groups within a workspace.
+  source_operation: groups resource
+- name: list_permissions
+  description: List permissions binding groups to folders.
+  source_operation: permissions resource
+- name: list_activities
+  description: Retrieve workspace activity / audit records.
+  source_operation: activities resource
+- name: create_upload
+  description: Upload files or folders to a workspace.
+  source_operation: uploads resource
+- name: create_download
+  description: Download files/folders as a zip archive.
+  source_operation: downloads resource

@@ -1,0 +1,42 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.caplinked.com/api-changelog
+scheme: date
+current_version: v1
+entries:
+- date: '2024-03-06'
+  title: Send Reminder and Workspace Memberships
+  additions:
+  - POST /users/[:id]/remind — send an invite reminder to a user
+  - GET /workspaces/[:id]/memberships — list workspace members
+  breaking: false
+- date: '2017-05-23'
+  title: New endpoint - Watermark
+  additions:
+  - /watermark/[:id] GET/POST/PUT/DELETE — manage custom watermarks
+  - Endpoint to list custom watermark settings per team
+  fixes:
+  - Fixed /teams GET returning 500 when the org includes deleted teams
+  - Bumped Ruby SDK to v0.3.4
+  breaking: false
+- date: '2017-02-17'
+  title: Organization keys and user management
+  additions:
+  - Organization public and private keys for signing API requests
+  - New endpoint to delete users via organization admin token
+  - Organization list-memberships endpoint now shows all users and admin status
+  fixes:
+  - Fixed user 'jti' key returning null in list-user-membership requests
+  breaking: true
+  breaking_changes:
+  - Renamed 'jti' parameter to 'user_token'
+  - Bumped Ruby SDK to v0.3.0
+- date: '2017-01-20'
+  title: Updates to Teams and Organizations endpoints
+  additions:
+  - GET /api/v1/teams — list teams in the organization
+  breaking: true
+  breaking_changes:
+  - Removed ID request parameters for org / org-membership endpoints
+  - Removed membership_id from organization membership response
+  - Modified response structures to use property namespaces for downloads, memberships, and workspaces

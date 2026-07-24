@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.caplinked.com/getting-started
+environments:
+- name: sandbox
+  base_url: https://sandbox.caplinked.com/api/v1/
+  description: >-
+    CapLinked publishes a dedicated sandbox host for API development. Developers apply
+    for an API developer account/key and exercise the API against the sandbox before
+    going live. Current API specifications ("Swagger Docs") are served from the sandbox
+    environment behind an authenticated developer login.
+access:
+  signup: https://developer.caplinked.com/signup
+  apply_key: https://developer.caplinked.com/apply_key
+  note: >-
+    Access requires a developer account. Requests are signed with a public/private key
+    pair and a user token; private keys can be reset/rolled at any time.
+test_values:
+  documented: false
+  note: No public magic/test identifiers or fixture tokens are published; test data is created within the sandbox workspace.

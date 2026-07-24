@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.caplinked.com/getting-started
+docs: https://developer.caplinked.com/docs
+api_style: REST
+media_type: application/json
+authentication:
+  style: HMAC-SHA256 request signing over TLS
+  headers: [x-api-key, x-api-user-token, x-api-signature, x-api-exp-date]
+  ref: authentication/caplinked-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v1
+  example: /api/v1/
+request_expiration:
+  header: x-api-exp-date
+  description: Signed requests carry a Unix UTC expiration timestamp; default example window 1800s.
+search: true
+pagination:
+  supported: true
+  note: The API documents search, pagination, and filtering; page parameters appear on list operations (e.g. getFileInfo pageNumber).
+filtering: true
+idempotency:
+  supported: false
+  note: No documented idempotency-key header or contract.
+error_envelope:
+  format: json
+  ref: null
+rate_limiting:
+  documented: false
+cross_links:
+  authentication: authentication/caplinked-authentication.yml
+  lifecycle: lifecycle/caplinked-lifecycle.yml
+  changelog: changelog/caplinked-changelog.yml
+  data_model: data-model/caplinked-data-model.yml
