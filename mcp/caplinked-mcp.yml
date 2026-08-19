@@ -1,17 +1,20 @@
 generated: '2026-07-18'
 method: derived
 status: candidate
-source: >-
-  Derived from CapLinked documented endpoints (developer.caplinked.com/api-changelog,
-  /glossary) and the official Node SDK resource surface. No official hosted MCP server
-  was found; this is a candidate tool list for a future MCP wrapper.
+source: Derived from CapLinked documented endpoints (developer.caplinked.com/api-changelog, /glossary)
+  and the official Node SDK resource surface. No official hosted MCP server was found; this is a candidate
+  tool list for a future MCP wrapper.
 server:
   name: caplinked
   transport: http
   url: null
 auth:
   scheme: HMAC-SHA256 request signing
-  headers: [x-api-key, x-api-user-token, x-api-signature, x-api-exp-date]
+  headers:
+  - x-api-key
+  - x-api-user-token
+  - x-api-signature
+  - x-api-exp-date
 tools:
 - name: list_teams
   description: List teams in the organization.
@@ -58,3 +61,9 @@ tools:
 - name: create_download
   description: Download files/folders as a zip archive.
   source_operation: downloads resource
+deployment:
+  mode: none
+  verified: derived
+  tools: 15
+  checked: '2026-08-12'
+  source: catalog MCP census
