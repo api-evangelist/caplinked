@@ -31,7 +31,7 @@ accessModel:
   - authentication
   generated: '2026-07-22'
   method: derived
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 image: https://www.caplinked.com/wp-content/uploads/2022/03/Caplinked-Logo-299x80-e1541700266853.png
