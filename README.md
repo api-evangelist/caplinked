@@ -64,6 +64,103 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Caplinked is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+CapLinked is a secure virtual data room (VDR) provider used for M&A, fundraising, due diligence, audits, and other confidential document workflows. The CapLinked API is a RESTful, JSON API secured by HMAC-SHA256 request signing (TLS + signed requests) that lets developers embed CapLinked's information-security controls into their own applications: protect and encrypt files in secure cloud storage, configure Access Control List (ACL) privileges, apply enterprise Digital Rights Management (DRM) to Microsoft Office and PDF files, generate dynamic watermarks, produce exhaustive activity and audit-trail reports, and run OCR-backed search over stored files. The API models an Organization > Team > Workspace hierarchy containing Folders, Files, Groups, Permissions, Activities, Uploads, Downloads, and Watermarks, and ships official SDKs for Node.js, Ruby, PHP, C#/.NET, and Python. It supports search, pagination, and filtering.
 
-Backed by: 500-global — https://caplinked.com
+**Areas:** Company · Virtual Data Room · Document Security · File Sharing · Due Diligence · Mergers and Acquisitions · Digital Rights Management · Compliance · Data Room · Security
+
+## Caplinked on APIs.io
+
+Everything profiled for Caplinked is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/caplinked/](https://apis.io/providers/caplinked/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [CapLinked API](https://apis.io/apis/caplinked/caplinked-api/) — RESTful JSON API for CapLinked virtual data rooms, secured by HMAC-SHA256 request signing. Manage organizations, teams, workspaces, folders, files, groups,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [caplinked](https://apis.io/servers/caplinked/caplinked/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Caplinked Authentication](https://apis.io/security/caplinked/caplinked-authentication/)
+- [Caplinked Domain Security](https://apis.io/security/caplinked/caplinked-domain-security/)
+- [Caplinked Trust Center](https://apis.io/security/caplinked/caplinked-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://caplinked.com)
+- [Documentation](https://developer.caplinked.com/docs)
+- [Getting started](https://developer.caplinked.com/getting-started)
+- [Pricing](https://www.caplinked.com/pricing/)
+- [Sign up](https://developer.caplinked.com/signup)
+- [Support](https://www.caplinked.com/contact/)
+- [Changelog](https://developer.caplinked.com/api-changelog)
+- [Blog](https://www.caplinked.com/blog/)
+- [Compliance](https://www.caplinked.com/security/)
+- [Terms of service](https://www.caplinked.com/company/terms-of-service/)
+- [Privacy policy](https://www.caplinked.com/company/privacy-policy/)
+- [GitHub](https://github.com/caplinked)
+- [Status](https://status.caplinked.com/)
+
+## API Evangelist rating
+
+**Kin Score 29.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 57.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/caplinked/](https://apis.io/providers/caplinked/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Caplinked: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/caplinked/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
